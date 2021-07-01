@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="{% static '/css/style.css' %}">
+<link rel="stylesheet" href="{% static '/css/login_reg.css' %}">
+
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<div class="mainPannel"><div class="mainUp"></div>
+</div>
+<!-- style1 -->
+<div class="container">
+  <div id="box">
+    <!-- Dark/White Mode -->
+    <div class="centerright">
+      <input class="container_toggle" type="checkbox" id="switch" name="mode">
+        <label for="switch">Toggle</label>
+    </div>
+    
+    <div id="title"><b>Go On</b></div>
+    <input placeholder="Name" type="text" id="login_Name"></input>
+    <input placeholder="E-mail" type="email" id="Log_IN_Email"></input>
+    <button id="btn" type="button"><b>Log IN</b></button>
+    <div onclick="REGISTER()" id="crt">New? Sign Up here</div>
+  </div>
+  <div id="boxr">
+
+    <!-- Dark/White Mode -->
+    <!-- <div class="centermid">
+      <input class="container_toggle" type="checkbox" id="switch" name="mode">
+        <label for="switch">Toggle</label>
+    </div>
+   -->
+    <div id="title_reg"><b>Sign Up</b></div>
+  
+    <input placeholder="Name" type="text" id="SignUp_Name"></input>
+    <input placeholder="E-mail" type="email" id="mail"></input>
+    <input placeholder="Confirm E-mail" type="email" id="conf_mail"></input>
+    <button id="btn2" type="button"><b>REGISTER</b></button>
+  
+    <div onclick="LOGIN()" id="lgn">Have an account? Login.</div>
+    <!-- Male Female -->
+    <!-- <div class="centermid">
+      <label class="toggle male-female">
+        <input type="checkbox" class="toggle-checkbox">
+        <div class="toggle-btn"></div>
+    </label> -->
+    </div>
+</div>
+
+  
+
+  
+  
+
+<!-- Footer -->
+ <!-- <div class="thanku">
+  <h2>Anik</h2>
+ 
+ </div> -->
+
+</body>
+
+<script src="{% static '/js/main.js' %}"></script>
+<script src="{% static '/js/dark.js' %}"></script>
+</html>

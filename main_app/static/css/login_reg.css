@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,900&display=swap");
+/* login pannel */
+
+
+
+
+/* <!-- Toggle Button, background, text --> */
+.center {
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  right: 0px;
+  left: 0px;
+  padding: 10px;
+}
+.centerright {
+   position: absolute;
+   top: -5px;
+   left: 10%;
+   transform: translate(-50%);
+   width: 200px;
+   height: 100px;
+   border-radius: 20px;
+   
+ }
+ /* .centermid {
+   position: absolute;
+   top: 100px;
+   left: 100%;
+   transform: translate(-50%);
+   width: 200px;
+   height: 100px;
+   border-radius: 20px;
+   background: rgba(65, 160, 73, 0.8);
+ } */
+
+html {
+   width: 100%;
+   height: 100vh;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: var(--lightBg);
+
+   --lightBtn: #fe016c;
+   --lightBg: #fff;
+   --lightColor: #232323;
+   --lightGnt: #ecfff51c;
+}
+
+html[data-theme="dark"] {
+   background: var(--lightBg);
+   --lightBtn: #ffbd07;
+   --lightBg: #232323;
+   --lightColor: #fff;
+   --lightGnt: #ffffff59;
+}
+
+/* h1 {
+   font-family: "Poppins", sans-serif;
+   font-weight: 100;
+   color: var(--lightColor);
+}
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  color: var(--lightColor);
+} */
+
+input[type="checkbox"] {
+   height: 0;
+   width: 0;
+   visibility: hidden;
+}
+
+label {
+   cursor: pointer;
+   text-indent: -9999px;
+   width: 55px;
+   height: 30px;
+   background: var(--lightBtn);
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   -webkit-border-radius: 100px;
+   -moz-border-radius: 100px;
+   border-radius: 100px;
+   position: relative;
+}
+
+label:after {
+   content: "";
+   background: #fff;
+   width: 20px;
+   height: 20px;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   border-radius: 50%;
+   position: absolute;
+   top: 5px;
+   left: 4px;
+   transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+}
+
+input:checked + label {
+   background: #ffbd07;
+}
+
+input:checked + label:after {
+   left: calc(100% - 5px);
+   -webkit-transform: translateX(-100%);
+   -moz-transform: translateX(-100%);
+   -ms-transform: translateX(-100%);
+   -o-transform: translateX(-100%);
+   transform: translateX(-100%);
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+   transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 420ms !important;
+   transition-delay: 0 !important;
+}
+
+/* ignore, but thank u */
+.thanku {
+   width: 100%;
+   position: absolute;
+   left: 0px;
+   bottom: 0px;
+   background: var(--lightBg);
+   border-top: 3px solid var(--lightBtn);
+
+ 
+}
+.mainPannel {
+   background: var(--lightBtn);
+   width: 300px;
+   height: 400px;
+   position: static;
+   margin-bottom: auto;
+   border-radius: 1.3em;
+   box-shadow: 0px 11px 35px 2px rgb(66, 66, 66);
+}
+.mainUp {
+   width: 310px;
+   height: 390px;
+   background: var(--lightGnt);
+   margin-right: 40%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   -webkit-border-radius: 100px;
+   -moz-border-radius: 100px;
+   border-radius: 100px;
+   position: relative;
+   position: static;
+   border-radius: 1.3em;
+   box-shadow: 0px 11px 35px 2px rgb(66, 66, 66);
+}
+
+
+
+/* <!-- Login/Register Panel --> */
+
+ /*Login PANEL*/
+#box{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   width: 400px;
+   height: 550px;
+   background: rgb(174, 115, 222, 0.2);
+   border-radius: 20px;
+ }
+ 
+ #title{
+   position: absolute;
+   top: -50px;
+   left: 50%;
+   transform: translate(-50%);
+   width: 190px;
+   height: 100px;
+   background: rgba(65, 160, 73, 0.8);
+   border-radius: 20px;
+ }
+ #title b{
+   color: var(--lightColor);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   font-family: "Poppins", sans-serif;
+   font-size: 30px;
+ }
+
+ 
+ 
+ 
+ #login_Name{
+   position: absolute;
+   top: 150px;
+   left: 50%;
+   transform: translate(-50%);
+   width: 270px;
+   height: 50px;
+   outline: none;
+   border: none;
+   background: none;
+   font-family: "Poppins", sans-serif;
+   color: rgb(255, 255, 255);
+   border-bottom: 2px solid white;
+   font-size: 20px;
+   border-radius: 20px;
+ }
+ 
+ #Log_IN_Email{
+   position: absolute;
+   top: 250px;
+   left: 50%;
+   transform: translate(-50%);
+   width: 270px;
+   height: 50px;
+   outline: none;
+   border: none;
+   font-family: "Poppins", sans-serif;
+   background: none;
+   color: white;
+   border-bottom: 2px solid white;
+   font-size: 20px;
+   border-radius: 20px;
+ }
+ 
+ #btn{
+   position: absolute;
+   bottom: 110px;
+   left: 50%;
+   transform: translate(-50%);
+   width: 190px;
+   height: 100px;
+   font-family: "Poppins", sans-serif;
+   outline: none;
+   border: none;
+   background: rgb(84, 0, 156, 0.4);
+   color: var(--lightColor);
+   font-size: 30px;
+   border-radius: 20px;
+ }
+ #btn:hover{
+   background: rgb(84, 0, 156, 1);
+   cursor: pointer;
+ }
+ 
+ #crt{
+   position: absolute;
+   bottom: 40px;
+   left: 50%;
+   transform: translate(-50%);
+   color: #70607d;
+   font-family: "Poppins", sans-serif;
+   font-size: 13px;
+ }
+ #crt:hover{
+   cursor: pointer;
+   color: white;
+ }
+ 
+ /*Drop Off CSS*/
+ 
+ 
+ /*REGISTER PANEL*/
+ 
+ 
+ 
+ #boxr{
+   position: absolute;
+   top: -500%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   width: 400px;
+   height: 550px;
+   background: rgb(174, 115, 222, 0.2);
+   border-radius: 20px;
+ }
+ #title_reg{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 190px;
+  height: 100px;
+  background: rgba(65, 160, 73, 0.8);
+  border-radius: 20px;
+ }
+ #title_reg b{
+  color: var(--lightColor);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+ }
+ 
+ #btn2{
+  position: absolute;
+  bottom: 110px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 190px;
+  height: 100px;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+  background: rgb(84, 0, 156, 0.4);
+  color: var(--lightColor);
+  font-size: 30px;
+  border-radius: 20px;
+ }
+ #btn2:hover{
+   background: rgb(84, 0, 156, 1);
+   cursor: pointer;
+ }
+ #lgn{
+   position: absolute;
+   bottom: 40px;
+   left: 50%;
+   transform: translate(-50%);
+   color: #70607d;
+   font-family: "Poppins", sans-serif;
+   font-size: 13px;
+}
+#lgn:hover{
+  cursor: pointer;
+  color: white;
+}
+ 
+ /* #Sex{
+   position: absolute;
+   top: 270px;
+   left: 50%;
+   transform: translate(-50%);
+   width: 270px;
+   height: 50px;
+   outline: none;
+   border: none;
+   font-family: sans-serif;
+   background: none;
+   color: white;
+   border-bottom: 2px solid white;
+   font-size: 20px;
+   border-radius: 20px;
+ }
+  */
+ 
+ #SignUp_Name{
+   position: absolute;
+   top: 190px;
+   left: 50%;
+   transform: translate(-50%);
+   width: 270px;
+   height: 50px;
+   outline: none;
+   border: none;
+   background: none;
+   font-family: sans-serif;
+   color: white;
+   border-bottom: 2px solid white;
+   font-size: 20px;
+   border-radius: 20px;
+ }
+ 
+ #mail{
+   position: absolute;
+   top: 110px;
+   left: 50%;
+   transform: translate(-50%);
+   width: 270px;
+   height: 50px;
+   outline: none;
+   border: none;
+   background: none;
+   font-family: sans-serif;
+   color: white;
+   border-bottom: 2px solid white;
+   font-size: 20px;
+   border-radius: 20px;
+ }
+ #conf_mail{
+  position: absolute;
+  top: 270px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 270px;
+  height: 50px;
+  outline: none;
+  border: none;
+  font-family: sans-serif;
+  background: none;
+  color: white;
+  border-bottom: 2px solid white;
+  font-size: 20px;
+  border-radius: 20px;
+}
+ 
+
+ ::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 1; /* Firefox */
+
+}
+
+/* Male/Female Toggle */
+
